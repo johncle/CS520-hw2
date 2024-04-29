@@ -1,5 +1,3 @@
-package src.main.java.evo;
-
 import java.lang.Math;
 
 public class Evo {
@@ -11,19 +9,19 @@ public class Evo {
         return sum;
     }
 
-    public static int sumOutOfBounds(int[] nums) {
+    public static int sumOffByOne(int[] nums) {
         int sum = 0;
-        // i should stop before nums.length
-        for (int i = 0; i <= nums.length; ++i) {
+        // i should start at 0
+        for (int i = 1; i < nums.length; ++i) {
             sum += nums[i];
         }
         return sum;
     }
 
-    public static int sumOffByOne(int[] nums) {
+    public static int sumOutOfBounds(int[] nums) {
         int sum = 0;
-        // i should start at 0
-        for (int i = 1; i < nums.length; ++i) {
+        // i should stop before nums.length
+        for (int i = 0; i <= nums.length; ++i) {
             sum += nums[i];
         }
         return sum;
@@ -50,8 +48,8 @@ public class Evo {
     }
 
     public static int[] genRangeBadMath1(int start, int end, int step) {
-        // forgot to include parentheses
-        int[] range = new int[(int) Math.ceil(end - start / step)];
+        // forgot to include parentheses and round up
+        int[] range = new int[end - start / step];
         int x = start - step;
         for (int i = 0; i < range.length; ++i) {
             range[i] = x += step;
