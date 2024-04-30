@@ -1,5 +1,7 @@
 # Automated Tool of Choice: EvoSuite
 
+### [EvoSuite Video Walkthrough](https://youtu.be/BhmtQcIu6pk)
+
 EvoSuite is an automated test suite generation tool for Java. It takes in Java 8 (or 9) classes and/or packages as bytecode, analyzes them, and generates JUnit 4 tests for the following test criteria:
 
 -   Line Coverage
@@ -32,6 +34,7 @@ evosuite-tests contains two .java files, one for scaffolding the Java framework 
     - [EvoSuite files](https://github.com/EvoSuite/evosuite/releases/tag/v1.2.0) are `evosuite-1.2.0.jar` (main executable) and `evosuite-standalone-runtime-1.2.0.jar` (runtime test dependency)
     - Maven should be given a dependency for JUnit 4.12. Alternatively if you don’t want to use Maven, you can provide junit.jar and hamcrest-core.jar and compile everything yourself
     - Check versions with `java -version`, `javac -version`, and `mvn -version`
+    - See our [Example files](https://github.com/johncle/CS520-hw2)
 
 2. In the parent directory, compile the .java code into .class files with `mvn compile`
 
