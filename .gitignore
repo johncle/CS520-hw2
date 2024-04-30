@@ -36,13 +36,7 @@ buildNumber.properties
 # https://github.com/takari/maven-wrapper#usage-without-binary-jar
 .mvn/wrapper/maven-wrapper.jar
 
-# evosuite
-evosuite-report/
-evosuite-tests/
-
 # misc
-test.py
 Tutorial_Stack/
-Tutorial_Stack.zip
-sbst20_competition.pdf
-
+*.py
+*.pdf

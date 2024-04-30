@@ -11,8 +11,8 @@ public class Evo {
 
     public static int sumOffByOne(int[] nums) {
         int sum = 0;
-        // i should start at 0
-        for (int i = 1; i < nums.length; ++i) {
+        // should be i >= 0
+        for (int i = nums.length - 1; i > 0; ++i) {
             sum += nums[i];
         }
         return sum;
